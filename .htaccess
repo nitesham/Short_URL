@@ -1,0 +1,10 @@
+<Files .htaccess>
+order allow,deny
+</Files>
+
+Options +FollowSymLinks
+RewriteEngine On
+
+
+
+RewriteRule ^(\w+)$ ./load.php?short_url=$1
